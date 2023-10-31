@@ -11,14 +11,23 @@ body {
     padding: 20px;
 }
 
+body {
+    background-image: url('../img/cine.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Optional: Fixed background scroll */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the fourth value (alpha) for transparency */
+}
 
 header {
     background-color: #1c1c1c;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the fourth value (alpha) for transparency */
     padding: 10px;
 }
 
 h1 {
     font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the fourth value (alpha) for transparency */
 }
 
 nav ul {
@@ -37,6 +46,7 @@ nav ul li a {
 
 section {
     background-color: #1c1c1c;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the fourth value (alpha) for transparency */
     padding: 20px;        
     border-radius: 5px;
     margin: 20px 0;
@@ -73,6 +83,7 @@ h1 span {
     opacity: 1;
     animation: appear 0.5s ;
     margin-bottom: 35px;
+    
 }
 
 @keyframes appear {
