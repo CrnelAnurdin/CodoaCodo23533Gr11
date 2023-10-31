@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine y Series Al Día</title>      
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="stylesheet" type="text/css" href="styles/side.css">    
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">    
+</head>
+<body>
+    <header>
+        <h1>
+            <span>C</span>
+            <span>i</span>
+            <span>n</span>
+            <span>e</span>
+            <span></span>
+            <span>y</span>
+            <span></span>            
+            <span>S</span>
+            <span>e</span>
+            <span>r</span>
+            <span>i</span>
+            <span>e</span>
+            <span>s</span>
+            <span> </span>
+            <span>a</span>
+            <span>l</span>
+            <span> </span>
+            <span>D</span>
+            <span>i</span>
+            <span>a</span>                      
+        </h1>        
+        <nav>
+            <ul>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#nuevos-lanzamientos">Series Nuevas</a></li>
+                <li><a href="#generos">Encuentra</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="generos">
+        <h2>Encuentra</h2>
+        <p>Tus proximas series y peliculas favoritas.</p>
+        <input type="text" id="searchInput" placeholder="Buscar...">
+        <div id="resultsGrid" class="grid-container"></div>        
+        <aside class="block-reserved"><p>Espacio disponible para publicidad</p></aside>
+    </section>   
+    
+
+    <section id="nuevos-lanzamientos">
+        <h2>Series Nuevas</h2>
+        <p>Revisa las últimas películas y series</p>
+        <div class="carousel" >            
+                <figure class="carousel_item active">
+                    <img src="img/GenV.jpeg" alt="Image 1" class="img-fluid">
+                    <figcaption>GenV</figcaption>
+                </figure>
+                <figure class="carousel_item">
+                    <img src="img/OnePiece.jpeg" alt="Image 2" class="img-fluid">
+                    <figcaption>One Piece</figcaption>
+                </figure>
+                <figure class="carousel_item">
+                    <img src="img/Loki.jpeg" alt="Image 3" class="img-fluid">
+                    <figcaption>Loki</figcaption>
+                </figure>            
+        </div>
+        <aside class="block-reserved"><p>Espacio disponible para publicidad</p></aside>
+    </section>    
+
+    <section id="popular">
+        <h2>Series y Peliculas Populares</h2>
+        <p>Descubre las series y pelicuas mas populares</p>        
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/DDpiJ16yqnM" allowfullscreen></iframe>                        
+        </div>                        
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Escribenos para comentarios o sugerencias sobre alguna serie o pelicula.</p>
+        <aside class="block-reserved"><p>Espacio disponible para publicidad</p></aside>                
+        <div id="contact-form" class="hidden">
+           <form>
+            <div class="form-group">
+                <label for="name"> Nombre </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono"> Telefono </label>
+                <input type="tel" id="Telefono" name="Telefono">
+            </div>
+            <div class="form-group">
+                <label for="mensaje"> Mensaje </label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit"> Enviar </button>
+            </form>
+        </div>                                
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cine y Series Al Dia. All rights reserved.</p>
+        <div class="scroll-to-top" id="scrollToTop">&uarr;</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api_tmdb_seach.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/carousel.js"></script>
+    <script>        
+        
+    
+        const letters = document.querySelectorAll('h1 span');
+        letters.forEach((letter, index) => {
+            setTimeout(() => {
+                letter.classList.add('animated');
+            }, 100 * index); 
+        });       
+
+  
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTop = document.getElementById("scrollToTop");
+
+    scrollToTop.addEventListener("click", function () {
+        document.querySelector("header").scrollIntoView({ behavior: "smooth" });
+    });
+    });
+    
+    </script>
+    
+</body>
+</html>
