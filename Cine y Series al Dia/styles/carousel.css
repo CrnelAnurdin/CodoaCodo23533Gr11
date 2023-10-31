@@ -1,17 +1,18 @@
 .carousel {
     position: relative;
-    align-content: center;
+    align-content: center;    
   }
   
   .carousel_item {
-    height: 40%;    
+    height: 50%;    
     padding: 1em;
-    width: 40%;
+    width: 50%;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
     font-size: 2em;
     color: #ffffff;
     display: none;
+    text-align: center;
   }
   
   .carousel_item--selected {
@@ -19,7 +20,7 @@
   }
   
   .carousel__nav {
-    width: 50%;
+    width: 60%;
     padding: 20px 0;
     position: absolute;
     bottom: 0;

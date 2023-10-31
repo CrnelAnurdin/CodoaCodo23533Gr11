@@ -27,11 +27,13 @@ header {
 
 h1 {
     font-size: 36px;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the fourth value (alpha) for transparency */
 }
 
 nav ul {
     list-style: none;
+    text-align: center;
 }
 
 nav ul li {
@@ -109,8 +111,7 @@ h1 span {
     position: relative;
     padding: 25%; 
     width: 70%; 
-    margin: 0 auto;
-    
+    margin: 0 auto;       
 }
 
 .video-container iframe {
@@ -118,7 +119,7 @@ h1 span {
     top: 0;
     left: 0;    
     width: 70%;
-    height: 70%;   
+    height: 70%;       
 }
 
 p {
