@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/form.css">
     <link rel="stylesheet" type="text/css" href="styles/side.css">    
-    <link rel="stylesheet" type="text/css" href="styles/carousel.css">    
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">  
+    <link rel="icon" type="image/png" sizes="16x16 32x32 64x64" href="img/favicon.ico">  
 </head>
 <body>
     <header>
@@ -117,26 +118,14 @@
     <script src="js/api_tmdb_seach.js"></script>
     <script src="js/form.js"></script>
     <script src="js/carousel.js"></script>
-    <script>        
-        
-    
+    <script src="js/scroll_up.js"></script>
+    <script>                  
         const letters = document.querySelectorAll('h1 span');
         letters.forEach((letter, index) => {
             setTimeout(() => {
                 letter.classList.add('animated');
             }, 100 * index); 
-        });       
-
-  
-
-    document.addEventListener("DOMContentLoaded", function () {
-    const scrollToTop = document.getElementById("scrollToTop");
-
-    scrollToTop.addEventListener("click", function () {
-        document.querySelector("header").scrollIntoView({ behavior: "smooth" });
-    });
-    });
-    
+        });              
     </script>
     
 </body>
